@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			#br1,#br2{
+			height: 350px;
+			width: 1330px;
+			}
+			#pra,#pra1,#pra2{
+			height : 430px;
+			width: 400px;
+			background-color: #2596be;
+			}
+			.bn{
+			height:70px;
+			width: 120px;
+			background-color: #2596be;
+			
+			}
+			.bn1{
+			display:flex;
+			justify-content: space-around;
+			}
+			.image1{
+			background-color:#e5eef1;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="cnt" >
+		<center><h2>Choose One Pic</h2>
+		
+		<br><br>	
+		<div class="image1" >
+		<img  id="pra" src="Pranikaa.jpeg" alt="Image" class="image"  >
+		<img  id="pra" src="pic1.jpeg" alt="Image" class="image"  >
+		<img  id="pra" src="pic2.jpeg" alt="Image" class="image"  ></div>
+		<fieldset class="bn1">
+		<button id="btn" class="bn" onclick="summa2()" >Pakhii</button>
+		<button id="btn1" class="bn" onclick="summa()" >Karthi & Pakhii</button>
+		<button id="btn2" class="bn" onclick="summa1()" >Kavi & Drlng</button>
+		</fieldset>
+	</div>
+	</center><div class="summa" style="display: none;" id="myFieldset3" style="display: none;">
+	<center>
+		
+		<center><h2>Happy Birthday Minion <h2></center>
+		<img id="br1" src="specs.jpg" alt="Image" class="image"  >
+	   </div>
+	   
+	</center>
+		</center><div class="summa" style="display: none;" id="myFieldset" style="display: none;">
+	<center>
+		<img id="br1" src="br.webp" alt="Image" class="image"  >
+		<center><h2>Happy Birthday Pakhiiii<h2></center>
+		<video width="1330px" height="500px" controls="controls">
+        <source src="Pranikaa.mp4" type="video/mp4" />
+       </video><br><br>
+	   </div>
+	   
+	</center>
+	<div class="summa" style="display: none;" id="myFieldset1" style="display: none;">
+	<center>
+		<img id="br2" src="br.webp" alt="Image" class="image"  >
+		<center><h2>Happy Birthday Pakhiiii<h2></center>
+		<video width="1330px" height="500px" controls="controls">
+        <source src="Kavi.mp4" type="video/mp4" />
+       </video><br><br>
+	   </div>
+	   
+	</center>
+	</body>
+	<script>
+		
+		function summa(){
+		if (myFieldset.style.display === "none") {
+                myFieldset.style.display = "block";
+				 cnt.style.display = "none";
+            } else {
+                myFieldset.style.display = "none";
+				 cnt.style.display = "block";
+            }
+		}
+		function summa2(){
+		if (myFieldset3.style.display === "none") {
+                myFieldset3.style.display = "block";
+				 cnt.style.display = "none";
+            } else {
+                myFieldset3.style.display = "none";
+				 cnt.style.display = "block";
+            }
+		}
+		function summa1(){
+		if (myFieldset1.style.display === "none") {
+                myFieldset1.style.display = "block";
+				 cnt.style.display = "none";
+            } else {
+                myFieldset1.style.display = "none";
+				 cnt.style.display = "block";
+            }
+		}
+		
+	</script>
+</html>
